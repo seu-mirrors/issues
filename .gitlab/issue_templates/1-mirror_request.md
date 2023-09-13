@@ -1,8 +1,3 @@
-title: [镜像请求]
-labels: mirror_request
-
----
-
 ### 项目名称与简介
 
 
