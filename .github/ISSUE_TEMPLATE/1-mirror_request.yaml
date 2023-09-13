@@ -1,0 +1,34 @@
+name: Mirror request / 镜像请求
+description: Suggest setting up new mirrors / 建议设立新的镜像
+title: "[镜像请求] "
+labels: ["Mirror Request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎向东南大学开源镜像站提交新镜像请求，请按以下模板填写。
+  - type: textarea
+    id: name
+    attributes:
+      label: 项目名称与简介
+    validations:
+      required: true
+  - type: textarea
+    id: sync_method
+    attributes:
+      label: 上游地址与镜像方法
+    validations:
+      required: true
+  - type: textarea
+    id: mirror_size
+    attributes:
+      label: 镜像大小
+    validations:
+      required: false
+  - type: textarea
+    id: more_info
+    attributes:
+      label: 备注
+    validations:
+      required: false
+

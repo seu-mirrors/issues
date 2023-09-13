@@ -1,0 +1,42 @@
+name: Bug report / 故障报告
+description: Report a bug you found when using SEU mirrors / 报告在使用东南大学开源镜像站时出现的 bug
+labels: ["Service Issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请使用此模板来报告 bug，并尽可能多地提供信息。
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: 先决条件
+      options:
+        - label: |
+            我已确认这个问题没有在[其他 issues](https://github.com/seu-mirrors/issues/issues)中提出过。
+          required: true
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: 发生了什么
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: 期望的现象
+    validations:
+      required: true
+  - type: textarea
+    id: how_to_reproduce
+    attributes:
+      label: 如何重现此问题
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 遇到问题的环境
+  - type: textarea
+    id: others
+    attributes:
+      label: 其他需要说明的事项
